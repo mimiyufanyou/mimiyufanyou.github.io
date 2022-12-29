@@ -6,7 +6,7 @@ logo_url:           https://avatars.githubusercontent.com/u/13479211?v=4    # Ge
 
 # Site Settings
 url:                https://mimiyufanyou.github.io # main url
-baseurl:            /index
+baseurl:            /
 permalink:          /:title # Post permalink
 timezone:           America/Recife # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 mathjax:            true  # enables support for mathjax - set to 'false' to disable
