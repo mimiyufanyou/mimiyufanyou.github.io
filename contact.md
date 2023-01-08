@@ -3,5 +3,5 @@ layout: page
 title: Contact
 ---
 
-- E-mail: your e-mail
-- GitHub: your GitHub account
+- GitHub: https://github.com/mimiyufanyou
+- Linkedin: https://www.linkedin.com/in/mimi-yufan-you/
