@@ -38,7 +38,6 @@ To achieve this, Axelrod used a probabilistic approach. Each pair of strategies 
 The probability chosen meant that the expected number of turns in each encounter was 200, but the actual number varied, introducing uncertainty and encouraging participants to develop strategies that could adapt to both short-term and long-term interactions. This design was crucial in evaluating the effectiveness of various strategies in a setting that closely mimics the unpredictability of real-life interactions.
 
 Using the Axelrod library available here:  <https://axelrod.readthedocs.io/en/stable/index.html> we can simulate Axelrod's infamous first tournament using the original set of strategies submitted handily with _axelrod.axelrod_first_strategies_ I've used the Plotly Express library for visualizations instead of the Axelrod plotting functions based on personal preference and interactivity. With the luxury of processing power now but a fairly low amount of patience to watch things run, I set the tournament to 100 turns with 1000 repetitions. 
-
 <iframe title="Strategies from Axelrod's First Tournament" 
 src="https://rawcdn.githack.com/mimiyufanyou/mimiyufanyou.github.io/aead09bceac0697fcca991c430071aa2cd956dcf/assets/axelrod_first_tournament.html"
         style="width: 100%; 
@@ -46,15 +45,12 @@ src="https://rawcdn.githack.com/mimiyufanyou/mimiyufanyou.github.io/aead09bceac0
                border: none;">
 </iframe>
 [^1]: Axelrod Library: <https://axelrod.readthedocs.io/en/stable/index.html> 
-
 In this first round, we see that the top-scoring strategies have a cooperation rating of upwards of .60 to .90 while the bottom strategies range lower. Summarizing another round of tournament results by cooperation rating bins here, we can show the results even more concisely. 
-
 <iframe title="Median Score by Binned Cooperation Rating"   src="https://rawcdn.githack.com/mimiyufanyou/mimiyufanyou.github.io/2fd0e37c986d86241187438fd6191efebe0e4786/assets/cooperation_ratings.html"
         style="width: 100%; 
                height: 550px; 
                border: none;">
 </iframe>
-
 ### ESS - An Evolutionarily Stable Strategy
 
 While in the short term depending on the tournament parameters, a variety of strategies can succeed, given continued repetition and rounds, Tit-for-Tat and a crop of other strategies that generally abide by Axelrod's outlined characteristics, echoing Tit-for-Tat's retaliatory but cooperative leaning, emerging more consistently than strategies of any other extremes. 
@@ -78,18 +74,15 @@ In the IPD, strategies evolve through repeated interactions, influenced by the o
 **Population Dynamics:** The success of an ESS also depends on the composition of the population. In a diverse strategic environment, an ESS must be robust against a wide range of strategies. However, in a more homogeneous population, an ESS might only need to defend against a few similar strategies.
 
 Using a replicator equation overlaid on the existing tournament logic - the first game dynamics studied in connection with evolutionary game theory. We predict the evolutionary outcome of population behavior using payoff translated as 'fitness' or reproductive success. Essentially, the fitness calculation uses each generation's payoff as a multiplier to its existing population. 
-
 ```
 fitness[i] += sum(payoff) * population[j]
 ```
-
 <iframe title="Evolution of Strategies from Axelrod's First Tournament" 
         src="https://rawcdn.githack.com/mimiyufanyou/mimiyufanyou.github.io/0cbe2fa4e823adea989161d01e3496eecd338e0f/assets/ess.html"
         style="width: 100%; 
                height: 550px; 
                border: none;">
 </iframe>
-
 Here again, in this third simulation round using the above replicator equation for each progressive generation, high-cooperation strategies multiply for the first 20 generations, stabilizing at around 60% of the population while a range of cooperation-leaning strategies make up the rest of the population. Any strategies with a cooperation probability of less than .5 go extinct in the first 20 generations. 
 
 ### Emergence of Wisdom and Cooperation
@@ -118,9 +111,8 @@ From fostering cooperation in a competitive environment to understanding the dyn
 
 ### Papers Referenced 
 
-@article{Li2021Evolutionary,title={Evolutionary game on a growing multilayer network},author={Gang Li and X. Sun},journal={Physica A-statistical Mechanics and Its Applications},year={2021},volume={578},pages={126110},doi={10.1016/J.PHYSA.2021.126110}}
+Li, G., & Sun, X. (2021). Evolutionary game on a growing multilayer network. Physica A: Statistical Mechanics and Its Applications, 578, 126110. https://doi.org/10.1016/J.PHYSA.2021.126110
 
-@article{Turker2021Forgiveness,title={Forgiveness is an Adaptation in Iterated Prisoner's Dilemma with Memory},author={Melik Z. Turker and H. Bingol},journal={ArXiv},year={2021},volume={abs/2112.07894},doi={}}
+Turker, M. Z., & Bingol, H. (2021). Forgiveness is an adaptation in iterated prisoner's dilemma with memory. arXiv preprint arXiv:2112.07894. Retrieved from https://arxiv.org/abs/2112.07894
 
-@article{Glynatsi2021Game,title={Game Theory and Python: An educational tutorial to game theory and repeated games using Python},author={Nikoleta E. Glynatsi and V. Knight},year={2021},volume={4},pages={78},doi={10.21105/JOSE.00078}}
-
+Glynatsi, N. E., & Knight, V. (2021). Game theory and Python: An educational tutorial to game theory and repeated games using Python. Journal of Open Source Education, 4, 78. https://doi.org/10.21105/JOSE.00078
