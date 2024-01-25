@@ -2,7 +2,7 @@
 title: Dominance of Cooperative Strategies in Iterated Prisoner's Dilemma with the Axelrod Python Library 
 type: blog
 date: 2024-01-20
-imageurl: /Iterated_Prisoners_Dilemma_Venn-Diagram.png
+imageurl: img/projects/Iterated_Prisoners_Dilemma_Venn-Diagram.png
 authors: Mimi Yufan You
 ---
 
