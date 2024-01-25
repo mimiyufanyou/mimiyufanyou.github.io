@@ -1,7 +1,7 @@
 ---
-title: Wisdom Proofs Dominance of Cooperative Strategies in Iterated Prisoner's Dilemma with Axelrod Python Library 
+title: Dominance of Cooperative Strategies in Iterated Prisoner's Dilemma with Axelrod Python Library 
 type: blog
-date: 2024-01-26
+date: 2024-01-20
 imageurl: /Iterated_Prisoners_Dilemma_Venn-Diagram.png
 authors: Mimi Yufan You
 ---
