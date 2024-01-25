@@ -6,9 +6,24 @@ imageurl: /Iterated_Prisoners_Dilemma_Venn-Diagram.png
 authors: Mimi Yufan You
 ---
 
+
+<iframe src="https://github.com/mimiyufanyou/mimiyufanyou.github.io/blob/09d9a5a8a03346a77b74edaa4a95dc0ab05f6c7c/assets/axelrod_first_tournament.html" width="700" height="500"></iframe>
+
 ### Introduction: The Iterated Game's Intrigue
 
 The Iterated Prisoner's Dilemma (IPD) transcends its simple, two-player, non-zero-sum game structure, presenting a complex tableau of human interaction, trust, and betrayal. Unlike its one-shot counterpart, the IPD unfolds over numerous rounds, allowing players to adapt strategies based on their opponent's previous actions. This dynamic elevates the IPD from a mere theoretical construct to a powerful tool for understanding behaviors in economics, politics, and social sciences.
+
+In Axelrod's "The Evolution of Cooperation" he outlined four common characteristics of winning strategies. 
+
+**Nice:**The strategy will not defect before its opponent does (this is sometimes referred to as an "optimistic" algorithm). Almost all the top-scoring strategies were nice. A purely selfish strategy will not "cheat" on its opponent for purely self-interested reasons first.
+**Retaliating:** The strategy must sometimes retaliate. An example of a non-retaliating strategy is Always Cooperate, a very bad choice that will frequently be exploited by "nasty" strategies.
+**Forgiving:** Successful strategies must be forgiving. Though players will retaliate, they will cooperate again if the opponent does not continue to defect. This can stop long runs of revenge and counter-revenge, maximizing points.
+**Non-envious:** The strategy must not strive to score more than the opponent.
+
+{% include_relative axelrod_first_tournament.html}
+
+### ESS - An Evolutionarily Stable Strategy
+While in the short term depending on the tournament parameters, a variety of strategies can succeed, Tit-for-Tat and other strategies that echo its retaliatory but cooperative leaning emerge more consistently than strategies on either extremes. 
 
 ### The Core Principles: Repeated Encounters and Strategy Evolution
 
