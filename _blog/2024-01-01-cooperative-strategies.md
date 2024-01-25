@@ -6,7 +6,7 @@ imageurl: /assets/viridis_stacked_100_percent_area_chart.png
 authors: Mimi Yufan You
 ---
 
-
+![Banner](/assets/viridis_stacked_100_percent_area_chart.png)
 
 ### The Core Principles: Repeated Encounters and Strategy Evolution
 
