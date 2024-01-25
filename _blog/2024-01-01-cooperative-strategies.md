@@ -2,9 +2,11 @@
 title: Dominance of Cooperative Strategies in Iterated Prisoner's Dilemma with the Axelrod Python Library 
 type: blog
 date: 2024-01-20
-imageurl: /the-plain-academic/assets/viridis_stacked_100_percent_area_chart.png
+imageurl: /assets/viridis_stacked_100_percent_area_chart.png
 authors: Mimi Yufan You
 ---
+
+
 
 ### The Core Principles: Repeated Encounters and Strategy Evolution
 
