@@ -102,9 +102,9 @@ fitness[i] += sum(payoff) * population[j]
 
 
 ### Advanced Insights: Beyond Simple Strategies
-**Complex Strategy Landscape:** The landscape of IPD strategies is vast and varied, ranging from always cooperating to more complex conditional strategies. These strategies can be adaptive, history-dependent, and research is continuing to progress in numerous directions building on Axelrod's work. Recent papers have explored adding multi-layer networks, ethical bounds, the expression of emotion as strategy for promoting cooperation, as well as selective attention or limited horizons for attention or memory. Each paper that builds on this initial research has found evidence for age-old wisdom such as forgiveness and forgetting as an adaptive memory management strategy. 
+**Complex Strategy Landscape:** The landscape of IPD strategies is vast and varied, ranging from always cooperating to more complex conditional strategies. These strategies can be adaptive, history-dependent, and research is continuing to progress in numerous directions building on Axelrod's work. Recent papers have explored adding multi-layer networks, ethical bounds, imitation, particle swarms, spatial IPD, the expression of emotion as strategy for promoting cooperation, as well as selective attention or limited horizons for attention or memory. Each paper that builds on this initial research has found evidence for age-old wisdom such as forgiveness and forgetting as an adaptive memory management strategy. 
 
-**Real-World Applications:** The IPD framework has been instrumental in understanding phenomena like the stability of trade agreements, the dynamics of political alliances, and even the evolution of altruism in biological systems.
+**Real-World Applications:** The IPD framework has been instrumental in understanding phenomena like the stability of trade agreements, the dynamics of political alliances, and what I am personally most interested in, the evolution of altruism in biological systems.
 
 **Emergence of Cooperation:** In a world seemingly dominated by self-interest, the IPD intriguingly demonstrates conditions under which cooperation can emerge and stabilize. Factors like the shadow of the future (the ongoing nature of interaction) significantly influence cooperative behavior.
 
