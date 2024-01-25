@@ -6,9 +6,6 @@ imageurl: /Iterated_Prisoners_Dilemma_Venn-Diagram.png
 authors: Mimi Yufan You
 ---
 
-
-<iframe src="https://github.com/mimiyufanyou/mimiyufanyou.github.io/blob/09d9a5a8a03346a77b74edaa4a95dc0ab05f6c7c/assets/axelrod_first_tournament.html" width="700" height="500"></iframe>
-
 ### Introduction: The Iterated Game's Intrigue
 
 The Iterated Prisoner's Dilemma (IPD) transcends its simple, two-player, non-zero-sum game structure, presenting a complex tableau of human interaction, trust, and betrayal. Unlike its one-shot counterpart, the IPD unfolds over numerous rounds, allowing players to adapt strategies based on their opponent's previous actions. This dynamic elevates the IPD from a mere theoretical construct to a powerful tool for understanding behaviors in economics, politics, and social sciences.
