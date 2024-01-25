@@ -17,8 +17,6 @@ In Axelrod's "The Evolution of Cooperation" he outlined four common characterist
 **Forgiving:** Successful strategies must be forgiving. Though players will retaliate, they will cooperate again if the opponent does not continue to defect. This can stop long runs of revenge and counter-revenge, maximizing points.
 **Non-envious:** The strategy must not strive to score more than the opponent.
 
-{% include_relative axelrod_first_tournament.html}
-
 ### ESS - An Evolutionarily Stable Strategy
 While in the short term depending on the tournament parameters, a variety of strategies can succeed, Tit-for-Tat and other strategies that echo its retaliatory but cooperative leaning emerge more consistently than strategies on either extremes. 
 
