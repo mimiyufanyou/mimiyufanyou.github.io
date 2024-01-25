@@ -4,16 +4,17 @@
   box-sizing: border-box;
 }
 html {
-  margin: 0;
+  margin: auto;
   padding: 0;
   height: 100%;
 }
 body {
   font-size: 14px;
+  vertical-align: middle; 
   line-height: 20px;
   font-weight: normal;
   font-style: normal;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: 'Cutive Mono', monospace;
   color: #333333;
   padding: 20px;
   margin: 0;
@@ -29,7 +30,7 @@ h3,
 h4,
 h5,
 h6 {
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     line-height: 1.25;
     color: #313131;
 }
@@ -38,7 +39,7 @@ h1 {
 }
 
 h2 {
-  margin-top: 1rem;
+  margin-top: 1.5rem;
   font-size: 1.5rem;
 }
 
@@ -78,16 +79,51 @@ blockquote {
   padding: 5px 30px;
   background: #eee;
 }
+
+.menu {
+  width: 100%;
+  position: relative;
+  margin: 0px auto 35px;
+  text-align: center;
+  @media screen and (max-width: 420px) {
+    .top-menu {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    .bottom-menu {
+      width: 100%;
+    }
+  }
+  @media screen and (min-width: 420px) {
+    display: flex;
+    justify-content: center;
+  }
+  ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0pt;
+    li a {
+      text-align: center;
+      padding: 8px;
+      text-decoration: none;
+    }
+    li a:hover {
+      font-weight: bold;
+    }
+  }
+}
 .logo {
   position: relative;
   margin: 0 auto 35px;
   text-align: center;
-  animation-duration: 0.7s;
-  animation-fill-mode: both;
-  animation-name: bounce;
-  -webkit-animation-duration: 0.7s;
-  -webkit-animation-fill-mode: both;
-  -webkit-animation-name: bounce;
+  // animation-duration: 0.7s;
+  // animation-fill-mode: both;
+  // animation-name: bounce;
+  // -webkit-animation-duration: 0.7s;
+  // -webkit-animation-fill-mode: both;
+  // -webkit-animation-name: bounce;
   a {
     background: #ddd url("logo_wrapper.png");
     color: #000;
@@ -155,13 +191,13 @@ iframe {
 }
 ul,
 ol {
-  margin: 40px 0;
+  margin: 20px 0;
   padding-left: 50px;
   li {
     word-wrap: break-word;
   }
   img {
-    margin: 40px 0;
+    margin: 0;
     border-radius: 5px;
   }
 }
@@ -178,7 +214,7 @@ code,
 pre,
 .code,
 .footnotes {
-  font-family: Consolas, monaco, monospace;
+  font-family: 'Cutive Mono', monospace;
 }
 code {
   color: #f14e32;
@@ -207,7 +243,7 @@ pre {
 table {
   width: 100%;
   table-layout: fixed;
-  margin: 45px 0;
+  margin: 25px 0;
   thead {
     background: #f2f2f2;
   }
@@ -224,7 +260,7 @@ iframe {
   width: 100%;
 }
 article {
-  max-width: 500px;
+  max-width: 550px;
   margin: 0 auto;
   h1.title {
     line-height: 1.4em;
@@ -307,7 +343,7 @@ article {
 .page-navigation,
 .footer {
   text-align: center;
-  max-width: 500px;
+  max-width: 550px;
   margin: 0 auto;
   font-size: 0.8rem;
 }
@@ -331,8 +367,21 @@ article {
   }
 }
 section {
-  max-width: 500px;
+  max-width: 550px;
   margin: 0 auto 50px auto;
+  h1.title {
+    line-height: 1.4em;
+    text-align: center;
+    font-size: 1.4em;
+  }
+  .divider {
+    background: #ddd;
+    background: -webkit-gradient(linear,left top,right top,from(rgba(255,255,255,0)),color-stop(#ccc),to(rgba(255,255,255,0)));
+    background: -webkit-linear-gradient(left,rgba(255,255,255,0),#ccc,rgba(255,255,255,0));
+    background: linear-gradient(to right,rgba(255,255,255,0),#ccc,rgba(255,255,255,0));
+    height: 1px;
+    margin: 2em 0;
+  }
   ul {
     list-style: none;
     margin: 0;
