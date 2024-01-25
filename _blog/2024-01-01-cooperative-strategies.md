@@ -8,11 +8,11 @@ authors: Mimi Yufan You
 
 ### The Core Principles: Repeated Encounters and Strategy Evolution
 
-Foundation of the Dilemma: Each round of the IPD involves two players independently deciding whether to cooperate or defect. The highest collective payoff arises from cooperation, yet the individual temptation to defect for greater personal gain persists, risking mutual betrayal and the lowest payoff.
+**Foundation of the Dilemma:** Each round of the IPD involves two players independently deciding whether to cooperate or defect. The highest collective payoff arises from cooperation, yet the individual temptation to defect for greater personal gain persists, risking mutual betrayal and the lowest payoff.
 
-Iterative Nature: The essence of the IPD lies in its repetition. Players remember past actions and modify strategies, fostering a complex interplay of trust, prediction, and potential retaliation.
+**Iterative Nature:** The essence of the IPD lies in its repetition. Players remember past actions and modify strategies, fostering a complex interplay of trust, prediction, and potential retaliation.
 
-Strategy Evolution: Over iterations, strategies evolve. Tit-for-Tat, a strategy of mirroring the opponent's previous move, emerged as an effective approach in early computer tournaments organized by Robert Axelrod. Its success highlighted the importance of reciprocity in the IPD.
+**Strategy Evolution:** Over iterations, strategies evolve. Tit-for-Tat, a strategy of mirroring the opponent's previous move, emerged as an effective approach in early computer tournaments organized by Robert Axelrod. Its success highlighted the importance of reciprocity in the IPD.
 
 Since, three broad categories of strategies have been established: cooperating strategies, defecting strategies, and zero determinant (ZD) strategies. The first two are fairly self-explanatory. Zero-determinant strategies being a more recent and controversial introduction in the 2010's allowing a player using ZD strategies to unilaterally enforce a particular payoff relationship by choosing their moves according to calculations of the probabilities of payoff using linear equations. The real-world corollary to this could be negotiations with an unequal power dynamic and asymmetric information with an ability to also accurately assess the payoffs with this information. 
 
@@ -105,10 +105,10 @@ From fostering cooperation in a competitive environment to understanding the dyn
 
 ### Next Steps: Ideas for Future Analysis 
 
-+ Multi-layer Cooperative Network Simulation - possibly attempting to simulate Elinor Ostrom's design principles for common pool resources 
-+ Randomized Initial ESS Populations - simulate more starting population scenarios on a larger scale with more generations 
-+ Noise or Miscommunication Probability Parameter - attempting a quantification of the optimal range of forgiveness given noise & intentions 
-+ Introduction of ZD Strategies - rerunning existing analysis while including a new set of ZD strategies 
++ **Multi-layer Cooperative Network Simulation** - possibly attempting to simulate Elinor Ostrom's design principles for common pool resources 
++ **Randomized Initial ESS Populations** - simulate more starting population scenarios on a larger scale with more generations 
++ **Noise or Miscommunication Probability Parameter** - attempting a quantification of the optimal range of forgiveness given noise & intentions 
++ **Introduction of ZD Strategies** - rerunning existing analysis while including a new set of ZD strategies 
 
 ### Books Referenced 
 
