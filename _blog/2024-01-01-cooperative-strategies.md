@@ -104,15 +104,18 @@ From fostering cooperation in a competitive environment to understanding the dyn
 
 
 ### Next Steps: Ideas for Future Analysis 
+
 + Multi-layer Cooperative Network Simulation - possibly attempting to simulate Elinor Ostrom's design principles for common pool resources 
 + Randomized Initial ESS Populations - simulate more starting population scenarios on a larger scale with more generations 
-+ Noise or Miscommunication Probability Parameter - a quantitative analysis of the optimal range of forgiveness given noise 
++ Noise or Miscommunication Probability Parameter - attempting a quantification of the optimal range of forgiveness given noise & intentions 
 + Introduction of ZD Strategies - rerunning existing analysis while including a new set of ZD strategies 
 
 ### Books Referenced 
+
 <a target="_blank" href="https://www.amazon.com/Evolution-Cooperation-Revised-Robert-Axelrod/dp/0465005640/ref=sr_1_1?crid=UX8B7K5K69VQ&amp;keywords=evolution+of+cooperation&amp;qid=1706171872&amp;sprefix=evoluation+of+cooperation%252Caps%252C135&amp;sr=8-1&_encoding=UTF8&tag=githubpostsmi-20&linkCode=ur2&linkId=5a70641bfddc648cd5a8f503c1acb59f&camp=1789&creative=9325">Evolution of Cooperation - Robert Axelrod</a>
 
 ### Papers Referenced 
+
 @article{Li2021Evolutionary,title={Evolutionary game on a growing multilayer network},author={Gang Li and X. Sun},journal={Physica A-statistical Mechanics and Its Applications},year={2021},volume={578},pages={126110},doi={10.1016/J.PHYSA.2021.126110}}
 
 @article{Turker2021Forgiveness,title={Forgiveness is an Adaptation in Iterated Prisoner's Dilemma with Memory},author={Melik Z. Turker and H. Bingol},journal={ArXiv},year={2021},volume={abs/2112.07894},doi={}}
