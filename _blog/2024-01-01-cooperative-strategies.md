@@ -12,11 +12,14 @@ The Iterated Prisoner's Dilemma (IPD) transcends its simple, two-player, non-zer
 
 ### The Core Principles: Repeated Encounters and Strategy Evolution
 
-Foundation of the Dilemma: Each round of the IPD involves two players independently deciding whether to cooperate or defect. The highest collective payoff arises from mutual cooperation, yet individual temptation to defect for greater personal gain persists, risking mutual betrayal and the lowest payoff.
+Foundation of the Dilemma: Each round of the IPD involves two players independently deciding whether to cooperate or defect. The highest collective payoff arises from cooperation, yet the individual temptation to defect for greater personal gain persists, risking mutual betrayal and the lowest payoff.
 
 Iterative Nature: The essence of the IPD lies in its repetition. Players remember past actions and modify strategies, fostering a complex interplay of trust, prediction, and potential retaliation.
 
 Strategy Evolution: Over iterations, strategies evolve. Tit-for-tat, a strategy of mirroring the opponent's previous move, emerged as an effective approach in early computer tournaments organized by Robert Axelrod. Its success highlighted the importance of reciprocity in the IPD.
+
+![IPD](https://commons.wikimedia.org/wiki/File:Iterated_Prisoners_Dilemma_Venn-Diagram.svg)
+[^1]: Image Credit: Jplotkin8, CC BY-SA 3.0 <https://creativecommons.org/licenses/by-sa/3.0>, via Wikimedia Commons
 
 ### Advanced Insights: Beyond Simple Strategies
 
