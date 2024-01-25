@@ -18,7 +18,7 @@ Iterative Nature: The essence of the IPD lies in its repetition. Players remembe
 
 Strategy Evolution: Over iterations, strategies evolve. Tit-for-tat, a strategy of mirroring the opponent's previous move, emerged as an effective approach in early computer tournaments organized by Robert Axelrod. Its success highlighted the importance of reciprocity in the IPD.
 
-![IPD](https://commons.wikimedia.org/wiki/File:Iterated_Prisoners_Dilemma_Venn-Diagram.svg)
+![IPD](https://upload.wikimedia.org/wikipedia/commons/d/d6/Iterated_Prisoners_Dilemma_Venn-Diagram.svg)
 [^1]: Image Credit: Jplotkin8, CC BY-SA 3.0 <https://creativecommons.org/licenses/by-sa/3.0>, via Wikimedia Commons
 
 ### Advanced Insights: Beyond Simple Strategies
