@@ -6,14 +6,13 @@ imageurl: /Iterated_Prisoners_Dilemma_Venn-Diagram.png
 authors: Mimi Yufan You
 ---
 
-<!-- This is an HTML comment in Markdown -->
-
-<div> 
-    <p> this is me testing stuff out </p>
-</div>
-
 <div>
-  <iframe src="https://github.com/mimiyufanyou/mimiyufanyou.github.io/blob/09d9a5a8a03346a77b74edaa4a95dc0ab05f6c7c/assets/axelrod_first_tournament.html" width="700" height="500"></iframe>
+<iframe title="Axelrod's First Tournament - 100 Turns 1000 Repetitions " 
+        src="https://rawcdn.githack.com/mimiyufanyou/mimiyufanyou.github.io/5ab1d811d07c8c4db97e20d45626c6f316bff6b1/assets/axelrod_first_tournament.html"
+        style="width: 100%; 
+               height: 500px; 
+               border: none;">
+</iframe>
 </div>
 
 
