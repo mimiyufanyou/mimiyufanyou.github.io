@@ -16,16 +16,15 @@ const blog = defineCollection({
   }),
 });
 
-// Case studies. `order` sorts them (lowest first).
+// Personal projects. Each links out to its own site; `order` sorts them (lowest first).
 const projects = defineCollection({
   loader: glob({ pattern: "**/*.md", base: "./src/content/projects" }),
   schema: z.object({
     title: z.string(),
-    org: z.string(),
+    url: z.string().url(),
     years: z.string(),
     summary: z.string(),
-    outcome: z.string(),
-    tools: z.array(z.string()).default([]),
+    image: z.string(),
     order: z.number().default(99),
     draft: z.boolean().default(false),
   }),

@@ -27,8 +27,8 @@ const posts = (await getPosts()).slice(0, 3);
           {projects.map((p) => (
             <li>
               <div class="post-date code"><span>{p.data.years}</span></div>
-              <a class="title" href={`/projects/${p.id}`}>{p.data.title}</a>
-              <span class="meta">{p.data.org}{p.data.draft && " · draft"}</span>
+              <a class="title" href={p.data.url}>{p.data.title} ↗</a>
+              <p>{p.data.summary}</p>
             </li>
           ))}
         </ul>

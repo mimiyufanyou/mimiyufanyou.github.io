@@ -1,0 +1,33 @@
+---
+import Base from "../layouts/Base.astro";
+
+const roles = [
+  { org: "Amazon Games", role: "Data Scientist II", years: "2023–2026" },
+  { org: "Niantic", role: "Data Scientist (Lead)", years: "2021–2023" },
+  { org: "Rockstar Games", role: "Senior Data Analyst", years: "2020–2021" },
+  { org: "Mountain Equipment Co-op", role: "Lead Marketing Data Analyst", years: "2018–2020" },
+  { org: "Electronic Arts · FIFA", role: "Business Data Analyst", years: "2015–2017" },
+];
+---
+
+<Base title="Experience" description="Ten years of analytics and data science in games and retail.">
+  <article>
+    <div class="center"><h1 class="title">Experience</h1></div>
+    <div class="divider"></div>
+
+    <ul class="list">
+      {roles.map((r) => (
+        <li>
+          <div class="post-date code"><span>{r.years}</span></div>
+          <strong>{r.org}</strong><br /><span class="muted">{r.role}</span>
+        </li>
+      ))}
+    </ul>
+
+    <h3 class="year">Education</h3>
+    <ul class="list">
+      <li><strong>University of British Columbia</strong><br /><span class="muted">Bachelor of Commerce</span></li>
+      <li><strong>UC Berkeley Extension</strong><br /><span class="muted">Post-Baccalaureate in Counseling and Psychology</span></li>
+    </ul>
+  </article>
+</Base>

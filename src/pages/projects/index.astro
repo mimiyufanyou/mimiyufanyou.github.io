@@ -5,20 +5,20 @@ import { getProjects } from "../../data";
 const projects = await getProjects();
 ---
 
-<Base title="Projects" description="Case studies: what the problem was, what I did, and what changed.">
+<Base title="Projects" description="Personal projects: The Little Language Club and Stream Montessori.">
   <section>
     <div class="center"><h1 class="title">Projects</h1></div>
     <div class="divider"></div>
-
-    {projects.length === 0 && <p class="center muted">New write-ups are on their way.</p>}
 
     <ul class="list">
       {projects.map((p) => (
         <li>
           <div class="post-date code"><span>{p.data.years}</span></div>
-          <a class="title" href={`/projects/${p.id}`}>{p.data.title}</a>
-          <span class="meta">{p.data.org}{p.data.draft && " · draft"}</span>
-          <p>{p.data.outcome}</p>
+          <a class="title" href={p.data.url}>
+            <img src={p.data.image} alt="" loading="lazy" />
+            {p.data.title} ↗
+          </a>
+          <p>{p.data.summary}</p>
         </li>
       ))}
     </ul>
