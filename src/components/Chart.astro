@@ -1,0 +1,15 @@
+---
+// An interactive Plotly/Folium chart saved as its own HTML page in public/charts.
+interface Props {
+  src: string;
+  title: string;
+  caption?: string;
+  height?: number;
+}
+const { src, title, caption, height = 560 } = Astro.props;
+---
+
+<figure class="chart">
+  <iframe src={src} title={title} loading="lazy" style={`height:${height}px`}></iframe>
+  {caption && <figcaption>{caption}</figcaption>}
+</figure>

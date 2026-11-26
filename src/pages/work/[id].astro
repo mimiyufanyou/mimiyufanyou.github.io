@@ -1,0 +1,32 @@
+---
+import { render } from "astro:content";
+import Base from "../../layouts/Base.astro";
+import { getWork } from "../../data";
+
+export async function getStaticPaths() {
+  const work = await getWork();
+  return work.map((w) => ({ params: { id: w.id }, props: { item: w } }));
+}
+
+const { item } = Astro.props;
+const { Content } = await render(item);
+const d = item.data;
+---
+
+<Base title={d.title} description={d.summary}>
+  <article>
+    <p class="eyebrow">{d.org} · {d.years}{d.draft && " · DRAFT"}</p>
+    <h1 class="measure">{d.title}</h1>
+    <p class="outcome measure">{d.outcome}</p>
+    <ul class="tags">{d.tools.map((t) => <li>{t}</li>)}</ul>
+    <div class="prose">
+      <Content />
+    </div>
+    <p><a href="/work/">← All work</a></p>
+  </article>
+</Base>
+
+<style>
+  .outcome { font-size: 1.15rem; color: var(--muted); }
+  .prose { margin-top: 2rem; }
+</style>

@@ -1,0 +1,32 @@
+---
+import Base from "../../layouts/Base.astro";
+import { getWriting, fmtDate } from "../../data";
+
+const posts = await getWriting();
+---
+
+<Base title="Writing" description="Notes and experiments: simulations, maps and models.">
+  <h1>Writing</h1>
+  <p class="muted measure">Notes and experiments. Subscribe with <a href="/rss.xml">RSS</a>.</p>
+  <ol class="list">
+    {posts.map((p) => (
+      <li>
+        <time class="eyebrow" datetime={p.data.date.toISOString()}>
+          {fmtDate(p.data.date)}{p.data.wip && " · Work in progress"}{p.data.draft && " · DRAFT"}
+        </time>
+        <h2><a href={`/writing/${p.id}/`}>{p.data.title}</a></h2>
+        <p class="measure muted">{p.data.summary}</p>
+      </li>
+    ))}
+  </ol>
+</Base>
+
+<style>
+  .list { list-style: none; padding: 0; }
+  .list li { padding: 1.5rem 0; border-bottom: 1px solid var(--rule); }
+  .list time { display: block; }
+  .list h2 { margin: 0 0 0.4rem; }
+  .list h2 a { color: var(--ink); text-decoration: none; }
+  .list h2 a:hover { color: var(--accent); }
+  .list p { margin: 0; }
+</style>

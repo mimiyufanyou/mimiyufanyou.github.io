@@ -1,0 +1,30 @@
+---
+import Base from "../../layouts/Base.astro";
+import { getWork } from "../../data";
+
+const work = await getWork();
+---
+
+<Base title="Work" description="Case studies: what the problem was, what I did, and what changed.">
+  <h1>Work</h1>
+  <p class="muted measure">Each one: what the problem was, what I did, and what changed.</p>
+  <ol class="list">
+    {work.map((w) => (
+      <li>
+        <p class="eyebrow">{w.data.org} · {w.data.years}{w.data.draft && " · DRAFT"}</p>
+        <h2><a href={`/work/${w.id}/`}>{w.data.title}</a></h2>
+        <p class="measure">{w.data.summary}</p>
+        <p class="measure"><strong>{w.data.outcome}</strong></p>
+      </li>
+    ))}
+  </ol>
+</Base>
+
+<style>
+  .list { list-style: none; padding: 0; }
+  .list li { padding: 1.5rem 0; border-bottom: 1px solid var(--rule); }
+  .list h2 { margin: 0 0 0.5rem; }
+  .list h2 a { color: var(--ink); text-decoration: none; }
+  .list h2 a:hover { color: var(--accent); }
+  .list p { margin: 0.4rem 0; }
+</style>
