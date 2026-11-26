@@ -1,0 +1,35 @@
+---
+import { render } from "astro:content";
+import Base from "../../layouts/Base.astro";
+import { getPosts, longDate } from "../../data";
+
+export async function getStaticPaths() {
+  const posts = await getPosts();
+  return posts.map((p, i) => ({
+    params: { id: p.id },
+    props: { post: p, newer: posts[i - 1], older: posts[i + 1] },
+  }));
+}
+
+const { post, newer, older } = Astro.props;
+const { Content } = await render(post);
+const d = post.data;
+---
+
+<Base title={d.title} description={d.summary} image={d.image}>
+  <article>
+    <div class="center">
+      <h1 class="title">{d.title}</h1>
+      <time class="code" datetime={d.date.toISOString()}>{longDate(d.date)}</time>
+      {d.wip && <span class="code muted"> · work in progress</span>}
+    </div>
+    <div class="divider"></div>
+    <Content />
+  </article>
+
+  <div class="page-navigation code">
+    {newer && <><a href={`/blog/${newer.id}`} title={`NEXT: ${newer.data.title}`}>&lt;&lt;</a><span> &middot; </span></>}
+    <a href="/" title="Back to Index">Index</a>
+    {older && <><span> &middot; </span><a href={`/blog/${older.id}`} title={`PREV: ${older.data.title}`}>&gt;&gt;</a></>}
+  </div>
+</Base>

@@ -1,0 +1,14 @@
+---
+import Base from "../layouts/Base.astro";
+import { SITE } from "../site";
+---
+
+<Base title="Contact">
+  <article>
+    <div class="center"><h1 class="title">Contact</h1></div>
+    <div class="divider"></div>
+    <ul>
+      {SITE.links.map((l) => <li>{l.label}: <a href={l.href}>{l.label}</a></li>)}
+    </ul>
+  </article>
+</Base>

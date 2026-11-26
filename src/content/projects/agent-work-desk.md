@@ -9,20 +9,20 @@ order: 3
 draft: true
 ---
 
-## The problem
+### The problem
 
 <!-- DRAFT: from the 11-26 brief. Numbers are from the live board. The product it serves is deliberately not named. -->
 
 I run a small product alone. The work was piling up in chat sessions: each small fix done inside a long, expensive conversation, with no record of what was asked, who did it, or what it cost.
 
-## What I did
+### What I did
 
 - Built a board where every piece of work is a ticket with a size, an area and an owner.
 - A timer (no model involved) starts an agent session for each ticket I've marked Ready, choosing the model by ticket size.
 - Agents work on their own branch, attach proof, and stop at review. Nothing reaches production without my word.
 - Every session's token use is counted, so each ticket carries its own cost.
 
-## What changed
+### What changed
 
 - In one week the gate ran 100 sessions on 93 tickets; 74 reached Done.
 - The whole week cost $201. A ticket averaged $1.21 on the smaller model and $4.07 on the largest, so routing by size mattered.

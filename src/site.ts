@@ -1,9 +1,9 @@
 // One place for the words and links every page shares.
 export const SITE = {
   name: "Mimi Yufan You",
-  title: "Mimi Yufan You — Data Scientist",
   description:
     "Data scientist with ten years in games and retail analytics (EA, Rockstar Games, Niantic, Amazon Games), now building human-in-the-loop AI systems.",
+  avatar: "https://avatars.githubusercontent.com/u/13479211?v=4",
   links: [
     { label: "GitHub", href: "https://github.com/mimiyufanyou" },
     { label: "LinkedIn", href: "https://www.linkedin.com/in/mimi-yufan-you/" },

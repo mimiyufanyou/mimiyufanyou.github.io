@@ -1,0 +1,33 @@
+---
+import Base from "../../layouts/Base.astro";
+import { getPosts, shortDate } from "../../data";
+
+const posts = await getPosts();
+const years = [...new Set(posts.map((p) => p.data.date.getUTCFullYear()))];
+---
+
+<Base title="Blog" description="Notes and experiments: simulations, maps and models.">
+  <section>
+    <div class="center"><h1 class="title">Blog</h1></div>
+    <div class="divider"></div>
+
+    {years.map((y) => (
+      <>
+        <h3 class="year">{y}</h3>
+        <ul class="list">
+          {posts.filter((p) => p.data.date.getUTCFullYear() === y).map((p) => (
+            <li>
+              <div class="post-date code">
+                <span>{shortDate(p.data.date)}{p.data.wip && " · WIP"}{p.data.draft && " · draft"}</span>
+              </div>
+              <a class="title" href={`/blog/${p.id}`}>
+                {p.data.image && <img src={p.data.image} alt="" loading="lazy" />}
+                {p.data.title}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </>
+    ))}
+  </section>
+</Base>

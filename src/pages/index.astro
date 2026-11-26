@@ -1,94 +1,48 @@
 ---
 import Base from "../layouts/Base.astro";
-import { getWork, getWriting, fmtDate } from "../data";
+import { getPosts, getProjects, shortDate } from "../data";
 
-const work = await getWork();
-const writing = (await getWriting()).slice(0, 4);
+const projects = await getProjects();
+const posts = (await getPosts()).slice(0, 3);
 ---
 
 <Base>
-  <section class="hero">
-    <p class="eyebrow">Data scientist · Seattle</p>
-    <h1>I find the number that explains the problem, then build the thing that fixes it.</h1>
-    <p class="lede measure">
-      Ten years of analytics and machine learning in games and retail — EA's FIFA Ultimate Team,
-      Rockstar Games, Niantic, Amazon Games and MEC. Lately I build human-in-the-loop AI systems:
-      agents with review gates, self-hosted models, and evaluations that say when a model is good enough.
+  <section>
+    <p>Hello.</p>
+    <p>
+      I'm a data scientist in Seattle. I've spent ten years in games and retail analytics, at EA's FIFA,
+      Rockstar Games, Niantic, Amazon Games and MEC, and lately I build human-in-the-loop AI systems.
     </p>
-  </section>
+    <p>
+      This is my digital home for <a href="/projects">projects</a>, <a href="/blog">writing</a> and anything
+      else that comes to mind. If you'd like to reach out about opportunities, see my <a href="/contact">contact page</a>.
+    </p>
 
-  {work.length > 0 && <section aria-labelledby="work-h">
-    <div class="section-head">
-      <h2 id="work-h">Selected work</h2>
-      <a href="/work/">All work →</a>
-    </div>
-    <ul class="cards">
-      {work.map((w) => (
-        <li>
-          <a class="card" href={`/work/${w.id}/`}>
-            <span class="org">{w.data.org} · {w.data.years}{w.data.draft && " · DRAFT"}</span>
-            <span class="card-title">{w.data.title}</span>
-            <span class="outcome">{w.data.outcome}</span>
-          </a>
-        </li>
-      ))}
-    </ul>
-  </section>}
+    <div class="divider"></div>
 
-  <section aria-labelledby="writing-h">
-    <div class="section-head">
-      <h2 id="writing-h">Writing</h2>
-      <a href="/writing/">All writing →</a>
-    </div>
-    <ul class="posts">
-      {writing.map((p) => (
+    {projects.length > 0 && (
+      <>
+        <h3 class="year">Projects</h3>
+        <ul class="list">
+          {projects.map((p) => (
+            <li>
+              <div class="post-date code"><span>{p.data.years}</span></div>
+              <a class="title" href={`/projects/${p.id}`}>{p.data.title}</a>
+              <span class="meta">{p.data.org}{p.data.draft && " · draft"}</span>
+            </li>
+          ))}
+        </ul>
+      </>
+    )}
+
+    <h3 class="year">Recent writing</h3>
+    <ul class="list">
+      {posts.map((p) => (
         <li>
-          <a href={`/writing/${p.id}/`}>{p.data.title}</a>
-          <time datetime={p.data.date.toISOString()}>{fmtDate(p.data.date)}</time>
+          <div class="post-date code"><span>{shortDate(p.data.date)}</span></div>
+          <a class="title" href={`/blog/${p.id}`}>{p.data.title}</a>
         </li>
       ))}
     </ul>
   </section>
 </Base>
-
-<style>
-  .hero { padding: 2.5rem 0 1.5rem; }
-  .hero h1 { max-width: 22ch; }
-  .lede { font-size: 1.15rem; color: var(--muted); }
-  .section-head { display: flex; justify-content: space-between; align-items: baseline; margin-top: 3rem; }
-  .section-head a { font-size: 0.9rem; }
-  .cards {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
-    gap: 1rem;
-  }
-  .card {
-    display: flex;
-    flex-direction: column;
-    gap: 0.4rem;
-    height: 100%;
-    padding: 1.25rem;
-    border: 1px solid var(--rule);
-    border-radius: 8px;
-    background: var(--surface);
-    color: var(--ink);
-    text-decoration: none;
-    transition: border-color 0.15s;
-  }
-  .card:hover { border-color: var(--accent); }
-  .org { font-size: 0.8rem; color: var(--muted); }
-  .card-title { font: 600 1.15rem/1.25 var(--serif); }
-  .outcome { font-size: 0.95rem; color: var(--muted); }
-  .posts { list-style: none; padding: 0; margin: 0; }
-  .posts li {
-    display: flex;
-    justify-content: space-between;
-    gap: 1rem;
-    padding: 0.75rem 0;
-    border-bottom: 1px solid var(--rule);
-  }
-  .posts time { color: var(--muted); font-size: 0.9rem; white-space: nowrap; }
-</style>

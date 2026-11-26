@@ -1,10 +1,10 @@
 import rss from "@astrojs/rss";
 import type { APIContext } from "astro";
-import { getWriting } from "../data";
+import { getPosts } from "../data";
 import { SITE } from "../site";
 
 export async function GET(context: APIContext) {
-  const posts = await getWriting();
+  const posts = await getPosts();
   return rss({
     title: SITE.name,
     description: SITE.description,
@@ -13,7 +13,7 @@ export async function GET(context: APIContext) {
       title: p.data.title,
       description: p.data.summary,
       pubDate: p.data.date,
-      link: `/writing/${p.id}/`,
+      link: `/blog/${p.id}`,
     })),
   });
 }

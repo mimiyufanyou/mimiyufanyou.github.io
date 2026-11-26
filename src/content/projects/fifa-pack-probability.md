@@ -9,17 +9,17 @@ order: 1
 draft: true
 ---
 
-## The problem
+### The problem
 
 <!-- DRAFT: built only from the CV line. Mimi to add what the arbitrage was, in public-safe terms. -->
 
 FIFA Ultimate Team bookings fell by roughly 30%. The drop didn't line up with a release, a price change or seasonality.
 
-## What I did
+### What I did
 
 - Traced the drop to a card pack arbitrage problem: players had found a cheaper route to the value packs were meant to sell.
 - Built a real-time pack probability model so designers could see what a change to pack contents would do before shipping it.
 
-## What changed
+### What changed
 
 The model was deployed, and design changes it informed added up to more than $15m a year in revenue.

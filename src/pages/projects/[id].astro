@@ -1,0 +1,33 @@
+---
+import { render } from "astro:content";
+import Base from "../../layouts/Base.astro";
+import { getProjects } from "../../data";
+
+export async function getStaticPaths() {
+  const items = await getProjects();
+  return items.map((p) => ({ params: { id: p.id }, props: { item: p } }));
+}
+
+const { item } = Astro.props;
+const { Content } = await render(item);
+const d = item.data;
+---
+
+<Base title={d.title} description={d.summary}>
+  <article>
+    <div class="center">
+      <h1 class="title">{d.title}</h1>
+      <span class="code muted">{d.org} · {d.years}{d.draft && " · draft"}</span>
+    </div>
+    <div class="divider"></div>
+    <p><strong>{d.outcome}</strong></p>
+    <Content />
+    {d.tools.length > 0 && <p class="tools">{d.tools.join(" · ")}</p>}
+  </article>
+
+  <div class="page-navigation code">
+    <a href="/projects">&lt;&lt; Projects</a>
+    <span> &middot; </span>
+    <a href="/">Index</a>
+  </div>
+</Base>

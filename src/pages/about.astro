@@ -12,8 +12,9 @@ const roles = [
 ---
 
 <Base title="About" description={SITE.description}>
-  <div class="prose">
-    <h1>About</h1>
+  <article>
+    <div class="center"><h1 class="title">About</h1></div>
+    <div class="divider"></div>
     <p>
       I'm a data scientist in Seattle. I've spent ten years working out why numbers move in games and retail,
       and building the models, pipelines and dashboards that let teams act on it.
@@ -23,41 +24,22 @@ const roles = [
       board and stop at review, self-hosted image and voice models on my own GPU server, and evaluations that
       decide when a model is good enough to use.
     </p>
-    <p>
-      I'm open to remote contracts of 6 to 12 weeks in analytics, data science or applied AI.
-    </p>
+    <p>I'm open to remote contracts of 6 to 12 weeks in analytics, data science or applied AI.</p>
 
-    <h2>Where I've worked</h2>
-    <ul class="roles">
+    <h3 class="year">Experience</h3>
+    <ul class="list">
       {roles.map((r) => (
-        <li><strong>{r.org}</strong> <span>{r.role}</span> <span class="muted">{r.years}</span></li>
+        <li>
+          <div class="post-date code"><span>{r.years}</span></div>
+          <strong>{r.org}</strong><br /><span class="muted">{r.role}</span>
+        </li>
       ))}
     </ul>
 
-    <h2>Education</h2>
-    <ul>
-      <li>Bachelor of Commerce, University of British Columbia</li>
-      <li>Post-Baccalaureate in Counseling and Psychology, UC Berkeley Extension</li>
+    <h3 class="year">Education</h3>
+    <ul class="list">
+      <li><strong>University of British Columbia</strong><br /><span class="muted">Bachelor of Commerce</span></li>
+      <li><strong>UC Berkeley Extension</strong><br /><span class="muted">Post-Baccalaureate in Counseling and Psychology</span></li>
     </ul>
-
-    <h2>Elsewhere</h2>
-    <ul>
-      {SITE.links.map((l) => <li><a href={l.href}>{l.label}</a></li>)}
-    </ul>
-  </div>
+  </article>
 </Base>
-
-<style>
-  .roles { list-style: none; padding: 0; }
-  .roles li {
-    display: grid;
-    grid-template-columns: 1fr 1fr auto;
-    gap: 1rem;
-    padding: 0.5rem 0;
-    border-bottom: 1px solid var(--rule);
-  }
-  @media (max-width: 36rem) {
-    .roles li { grid-template-columns: 1fr auto; }
-    .roles li span:first-of-type { grid-column: 1; grid-row: 2; }
-  }
-</style>
