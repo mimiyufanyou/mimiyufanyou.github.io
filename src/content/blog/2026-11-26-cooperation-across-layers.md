@@ -3,7 +3,6 @@ title: "Cooperation Across Layers: The Prisoner's Dilemma on Grids, Coupled Netw
 summary: "Who you play with matters as much as how you play. Simulating the Prisoner's Dilemma on one grid, on two coupled grids, and on several layers at once, following the network-reciprocity research."
 date: 2026-11-26
 image: /img/multilayer_banner.png
-draft: true
 ---
 
 ![Cooperators (yellow) and defectors (purple) after 1,000 steps: one grid on the left, one of two coupled grids on the right](/img/multilayer_banner.png)

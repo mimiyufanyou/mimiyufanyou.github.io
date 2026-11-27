@@ -3,7 +3,6 @@ title: "Noise, Forgiveness and Extortion: Iterated Prisoner's Dilemma, Part 2"
 summary: "Picking up part 1's next steps: what miscommunication does to Tit For Tat, how much forgiveness pays, and why extortionate zero-determinant strategies win their matches but lose the tournament."
 date: 2026-11-26
 image: /img/ipd2_evolution_banner.png
-draft: true
 ---
 
 ![Population share of each strategy across 80 generations, with 5% noise and zero-determinant strategies in the mix](/img/ipd2_evolution_banner.png)
