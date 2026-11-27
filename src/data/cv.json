@@ -1,0 +1,199 @@
+{
+  "headline": {
+    "title": "Data Scientist - ML in Production, Segmentation & Forecasting",
+    "summary": "Impact driven data science across EA, Rockstar Games, Niantic, Amazon Games and MEC, from gradient-boosted bot detection in production and GTAO player segmentation to churn, LTV, store clustering and real-time pack-probability models. Open to remote contracts of 6 to 12 weeks"
+  },
+  "roles": [
+    {
+      "employer": "Amazon Games Studios",
+      "team": "Engineering",
+      "title": "Data Scientist II",
+      "location": "Seattle, WA",
+      "dates": "Dec ’23 – June ’26",
+      "tools": [
+        "Sagemaker",
+        "Jupyter Notebook",
+        "Airflow",
+        "Redshift",
+        "JetBrains IDEs"
+      ],
+      "groups": [
+        {
+          "label": "Technical Contributor",
+          "bullets": [
+            "Implemented behavioral and network-level features (session timing, click patterns, device fingerprinting, IP/request metadata) for gradient-boosted bot detection models across millions of daily traffic events",
+            "Deployed and iterated on XGBoost/LightGBM-based classification models in production, partnering closely with engineering teams to ship incremental improvements to detection accuracy while weighing false positive impact on legitimate users across the platform",
+            "Analyzed bot behavior patterns across large-scale traffic data to identify novel signal sources and edge cases, informing feature engineering work that improved model precision and reduced manual review burden"
+          ]
+        }
+      ]
+    },
+    {
+      "employer": "Niantic Labs",
+      "team": "Engineering",
+      "title": "Data Scientist (Lead)",
+      "location": "Seattle, WA and San Francisco, CA",
+      "dates": "Nov ’21 – June ’23",
+      "tools": [
+        "SQL",
+        "Airflow",
+        "Jupyter Notebooks",
+        "BigQuery",
+        "Periscope",
+        "Looker",
+        "Figma",
+        "JIRA"
+      ],
+      "groups": [
+        {
+          "label": "Impact, Leadership & Capacity Building",
+          "bullets": [
+            "Investigated complex products and user experiences using product intuition decomposed into analytical lines of inquiry contributing to 2x+ YoY bookings revenue for live product and significant revisit of strategy and design of pre-launch product",
+            "Led team of 5 in Q3/Q4 in prototype analytics tool on Kubeflow Jupyter Notebooks (iPywidgets, Plotly, Prophet, BigQuery)",
+            "Influenced prioritization of roadmap for 3+ titles across multiple product lifecycle stages and all levels of the organization",
+            "Mentored cross-functional teams on actionable recommendations for economics, player incentive & progression",
+            "Researched deep learning tools for in-game asset creation and network science principles for social graph analyses"
+          ]
+        }
+      ]
+    },
+    {
+      "employer": "TakeTwo Interactive",
+      "team": "Rockstar Games",
+      "title": "Senior Data Analyst (Associate Principal Analyst)",
+      "location": "New York, NY",
+      "dates": "June ’20 – Oct ’21",
+      "tools": [
+        "SQL Server",
+        "Snowflake",
+        "Excel",
+        "Tableau"
+      ],
+      "groups": [
+        {
+          "label": "Business Impact & Areas of Interest",
+          "bullets": [
+            "Owned, executed, socialized, productionalized several first of its kind models and reporting - First Day Played Dashboard the first cohortized metric dashboard of its kind at R* and Committed Player Model",
+            "Primary team-member for studio-wide behavioral segmentation of GTAO player clustering project",
+            "Main PIA point-of-contact for 2 releases on Red Dead Redemption Online running at $15m+ per release",
+            "Documented universal taxonomy data structures and telemetry specifications for upcoming title",
+            "Streamlining title update release process and analyst workflows across documentation and version control",
+            "Prototyped usage of social media platform APIs including Twitch API for reporting and analysis"
+          ]
+        }
+      ]
+    },
+    {
+      "employer": "Mountain Equipment Coop",
+      "team": "",
+      "title": "Lead Marketing Data Analyst",
+      "location": "Vancouver, BC",
+      "dates": "Jul ’18 – May ’20",
+      "tools": [
+        "PowerBI (DAX)",
+        "SQL Server"
+      ],
+      "groups": [
+        {
+          "label": "Business Impact & Areas of Interest",
+          "bullets": [
+            "Led development of activity-based campaign optimization data pipelines to inform ~$3m marketing budget",
+            "Led development of k-means store clustering that explained ~30%+ store performance deltas",
+            "Modernized customer reporting with churn, retention, and predictive lifetime value linear regression",
+            "Architected end-to-end API integration for Qualtrics & SalesForce Marketing Cloud in Azure/Python",
+            "Implemented back-end and front-end system for demand planning & SKU performance assortment tool",
+            "Efficiencies from supply chain discoveries had potential to improve web order fulfillment times by 40%+"
+          ]
+        },
+        {
+          "label": "Capacity Building",
+          "bullets": [
+            "Built team capabilities by designing curriculum and teaching weekly SQL and Python workshops to regular attendees",
+            "Hired, trained, and managed several cohorts of 3+ technical co-ops, 2 direct reports",
+            "Organized bi-weekly sprint cadences while coaching team on poker planning, user story creation",
+            "Recognized for taking on responsibilities above and beyond in workplace performance award 2018"
+          ]
+        }
+      ]
+    },
+    {
+      "employer": "Electronic Arts",
+      "team": "FIFA Sports",
+      "title": "Business Data Analyst",
+      "location": "Vancouver, BC",
+      "dates": "Aug ’15 – Nov ’17",
+      "tools": [
+        "SAS",
+        "R",
+        "Teradata",
+        "Redshift",
+        "Tableau"
+      ],
+      "groups": [
+        {
+          "label": "Business Impact & Areas of Interest",
+          "bullets": [
+            "Analyzed FIFA card pack arbitrage problem to explain ~30% drop in bookings resulting in deployment of real-time pack probability model to inform design changes accumulating $15m+ annual revenue improvement",
+            "Built geo-data, performance load-testing, spend exhaustion, CARPU/LTV reports in R, SAS, Tableau",
+            "Recognized for taking on data engineer responsibilities workplace performance award 2016",
+            "Exposure to impact of tuning and optimization of FIFA Mobile market-place artificial intelligence bot"
+          ]
+        }
+      ]
+    }
+  ],
+  "education": [
+    {
+      "school": "University of British Columbia",
+      "degree": "Bachelor of Commerce",
+      "dates": "Sep ’06 – May ’12",
+      "notes": [
+        "3.75/4.0 GPA, Dean’s List, President’s Entrance Scholarship",
+        "1st Place Team - Harvard MBA Case Course - COMM486R",
+        "Course Creator/Facilitator - Emerging Technologies and Business - COMM486B",
+        "International Relations Exchange - Sciences Po Paris"
+      ]
+    },
+    {
+      "school": "University of California, Berkeley Extension",
+      "degree": "Post-Baccalaureate in Counseling and Psychology",
+      "dates": "March ’23 – Oct ’24",
+      "notes": [
+        "Developmental Psychology Across the Lifespan - 99%",
+        "Research Methods in Psychology - 92.5%"
+      ]
+    }
+  ],
+  "certificates": [
+    {
+      "name": "Udacity - Data Science Nanodegree, Computer Vision Nanodegree",
+      "dates": "Oct ’18 – March ’19"
+    },
+    {
+      "name": "7Gate Ventures Academy - Machine Learning Computer Vision 10-Week Intensive",
+      "dates": "Feb ’20 – March ’20"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Deep Learning Neural Net Image Classifier App",
+      "text": "pipelines, functions, parameters, custom layers, vgg-16"
+    },
+    {
+      "name": "Geofence Notification App",
+      "text": "react native, express"
+    },
+    {
+      "name": "Web3 Crowdfunding Website",
+      "text": "react.js, tailwind css, solidity"
+    }
+  ],
+  "interests": [
+    "New Media Art",
+    "Permaculture",
+    "Energy and Ecology",
+    "Cooking",
+    "Pilates",
+    "Clinical Psychology"
+  ]
+}

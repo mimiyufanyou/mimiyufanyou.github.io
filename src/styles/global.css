@@ -122,6 +122,8 @@ article img { border-radius: 5px; }
 .list li .meta { font-size: 12px; }
 .list li .title { display: block; }
 .list li .title img { width: 100%; display: block; margin-bottom: 5px; border-radius: 5px; }
+/* Project previews all share one shape, whatever the source image's size */
+.list li .title img.preview { aspect-ratio: 1200 / 630; object-fit: cover; }
 .list li p { margin: 4px 0 0; font-size: 14px; line-height: 1.6; color: #555; }
 @media (min-width: 992px) {
   .list li a { border-bottom: 2px solid transparent; }

@@ -15,7 +15,7 @@ const projects = await getProjects();
         <li>
           <div class="post-date code"><span>{p.data.years}</span></div>
           <a class="title" href={p.data.url}>
-            <img src={p.data.image} alt="" loading="lazy" />
+            <img class="preview" src={p.data.image} alt="" loading="lazy" />
             {p.data.title} ↗
           </a>
           <p>{p.data.summary}</p>
