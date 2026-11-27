@@ -15,3 +15,5 @@ npm run build    # static site in dist/ — drafts left out
 - Analysis behind posts: `analysis/` (Python). Part 2 of the Prisoner's Dilemma post:
   `pip install axelrod plotly`, then `python analysis/ipd_part2.py` (simulations → `analysis/results/`)
   and `python analysis/ipd_part2_charts.py` (charts → `public/charts/ipd2_*.html`)
+- Multilayer post: `python analysis/multilayer.py` (lattice sweeps → `analysis/results/multilayer.json`, ~20+ min, 4 processes)
+  and `python analysis/multilayer_charts.py` (charts → `public/charts/ml_*.html`). Model in `analysis/lattice.py`.
