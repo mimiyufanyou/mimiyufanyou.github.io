@@ -1,67 +1,15 @@
 ---
 import Base from "../layouts/Base.astro";
 import { SITE } from "../site";
-// Synced from the job-search repo's CV blocks by scripts/sync-cv.py. Edit there, not here.
-import cv from "../data/cv.json";
 ---
 
-<Base title="CV & Contact" description={cv.headline.summary}>
-  <article class="cv">
-    <div class="center"><h1 class="title">CV &amp; Contact</h1></div>
+<Base title="Contact">
+  <article>
+    <div class="center"><h1 class="title">Contact</h1></div>
     <div class="divider"></div>
-
-    <p class="center contact">
-      {SITE.links.map((l, i) => <>{i > 0 && <span> · </span>}<a href={l.href}>{l.label}</a></>)}
-    </p>
-
-    <h3 class="year">Summary</h3>
-    <p><strong>{cv.headline.title}</strong></p>
-    <p>{cv.headline.summary}</p>
-
-    <h3 class="year">Professional Experience</h3>
-    {cv.roles.map((r) => (
-      <div class="role">
-        <div class="post-date code"><span>{r.dates}</span></div>
-        <strong>{r.employer}</strong>
-        <div class="muted">{[r.team, r.title].filter(Boolean).join(" · ")} · {r.location}</div>
-        {r.groups.map((g) => (
-          <>
-            <div class="group">{g.label}</div>
-            <ul>{g.bullets.map((b) => <li>{b}</li>)}</ul>
-          </>
-        ))}
-        {r.tools.length > 0 && <div class="tools-line code">{r.tools.join(" · ")}</div>}
-      </div>
-    ))}
-
-    <h3 class="year">Education</h3>
-    {cv.education.map((e) => (
-      <div class="role">
-        <div class="post-date code"><span>{e.dates}</span></div>
-        <strong>{e.school}</strong>
-        <div class="muted">{e.degree}</div>
-        {e.notes.length > 0 && <ul>{e.notes.map((n) => <li>{n}</li>)}</ul>}
-      </div>
-    ))}
-
-    <h3 class="year">Certificates</h3>
-    <ul>{cv.certificates.map((c) => <li>{c.name} <span class="muted">({c.dates})</span></li>)}</ul>
-
-    <h3 class="year">Projects</h3>
-    <ul>{cv.projects.map((p) => <li><strong>{p.name}</strong> <span class="muted">({p.text})</span></li>)}</ul>
-
-    <h3 class="year">Interests</h3>
-    <p>{cv.interests.join(", ")}</p>
+    <ul>
+      <li>CV: <a href="/cv/Mimi-Yufan-You-CV.pdf">Download PDF</a></li>
+      {SITE.links.map((l) => <li>{l.label}: <a href={l.href}>{l.label}</a></li>)}
+    </ul>
   </article>
 </Base>
-
-<style>
-  .cv .contact { font-size: 15px; }
-  .cv .role { margin: 0 0 30px; }
-  .cv .post-date { float: right; margin-left: 20px; }
-  .cv .post-date span { color: #757575; letter-spacing: 1px; font-size: 12px; text-transform: uppercase; }
-  .cv .group { margin-top: 10px; font-size: 13px; color: #555; font-style: italic; }
-  .cv ul { margin: 8px 0; padding-left: 20px; }
-  .cv li { font-size: 14px; line-height: 1.7em; margin: 4px 0; }
-  .cv .tools-line { font-size: 12px; color: #757575; }
-</style>
